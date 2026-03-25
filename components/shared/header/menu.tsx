@@ -32,7 +32,12 @@ const Menu = () => {
                     <ModeToggle />
                     <Button asChild variant='ghost'>
                         <Link href='/cart'>
-                            <ShoppingCart />
+                            <ShoppingCart /> Cart
+                        </Link>
+                    </Button>
+                    <Button asChild >
+                        <Link href="/signin" className="flex items-center gap-2">
+                            <UserIcon /> Sign In
                         </Link>
                     </Button>
                     <SheetDescription></SheetDescription>
