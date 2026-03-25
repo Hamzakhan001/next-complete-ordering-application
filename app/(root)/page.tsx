@@ -1,5 +1,9 @@
 const Homepage = () => {
-  return <>Ecomstore</> 
+  return (
+    <>
+    Ecom Store
+    </>
+  )
 }
  
 export default Homepage;

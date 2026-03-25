@@ -128,3 +128,73 @@
     @apply font-sans;
   }
 }
+
+@layer utilities {
+  .wrapper {
+    @apply max-w-7xl p-5 w-full;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex-start {
+    @apply flex justify-start items-center;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .h1-bold {
+    @apply font-bold text-3xl;
+  }
+
+  .h2-bold {
+    @apply font-bold text-2xl;
+  }
+
+  .h3-bold {
+    @apply font-bold text-xl;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .h1-bold {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .h2-bold {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .h3-bold {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+/* Uploadthing button text override */
+html.dark .upload-field .text-white {
+  color: #ffffff !important;
+}
+
+.upload-field .text-white {
+  color: #000 !important;
+}
