@@ -17,7 +17,18 @@ const Header = () => {
             </Link>
         </div>
 
-        
+        <div className="space-x-2">
+            <Button asChild variant='ghost'>
+                <Link href="/cart" className="flex items-center gap-2">
+                    <ShoppingCart /> Cart
+                </Link>
+            </Button>
+            <Button asChild variant='ghost'>
+                <Link href="/signin" className="flex items-center gap-2">
+                    <UserIcon /> Sign In
+                </Link>
+            </Button>
+        </div>
     </div>
    </header>
   )
