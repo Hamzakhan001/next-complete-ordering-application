@@ -12,6 +12,19 @@ export async function getLatestProducts() {
         orderBy: {createdAt: 'desc'}
     })
 
-    return data
+    return data.map((product) => ({
+        ...product,
+        price: product.price.toString(),
+        rating: product.rating.toString(),
+      }))
 }
 
+
+
+export async function getProductBySlug(slug: string) {
+    return await prisma.product.findFirst({
+        where: {
+            slug: slug
+        }
+    })
+}
